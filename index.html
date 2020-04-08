@@ -9,7 +9,7 @@ description: Better Than Life is an Immersive Studio in Amsterdam focussed on Vi
     {% for project in sorted %}
       <div class="project align-self-center">
         <div class="video-wrapper position-relative">
-          <video {% if forloop.first %} id="video1" {% endif %} tabindex="0" class="img-fluid" controls {% if forloop.first %} hr autoplay {% endif %} playsinline poster="{{ project.image }}">
+          <video {% if forloop.first %} id="video1" {% endif %} tabindex="0" class="img-fluid" {% if forloop.first %} hr autoplay {% endif %} playsinline poster="{{ project.image }}">
             <source src="{{ project.video }}" type="video/mp4" />
           </video>
         </div>
