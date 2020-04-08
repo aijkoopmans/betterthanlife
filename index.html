@@ -3,8 +3,8 @@ layout: default
 title: Immersive Studio in Amsterdam
 description: Better Than Life is an Immersive Studio in Amsterdam focussed on Virtual Reality and Augmented Reality.
 ---
-<div id="viewer" class="no-select content-inner content home">
-  <div class="d-md-flex h-100" style="width: calc({{ site.projects.size }} * 60vw + 20vw + 10vw)">
+<div id="viewer" class="no-select content home">
+  <div class="content-inner d-md-flex h-100" style="width: calc({{ site.projects.size }} * 60vw + 20vw + 10vw)">
     {% assign sorted = (site.projects | sort: 'position') %}
     {% for project in sorted %}
       <div class="project align-self-center">
@@ -17,7 +17,7 @@ description: Better Than Life is an Immersive Studio in Amsterdam focussed on Vi
         <div class="mt-3">
           <h2 class="h5 mb-1">{{ project.title }}</h2>
           <p class="mb-1">{{ project.subtitle }}</p>
-          <!-- <a class="text-decoration-underline" href="#">Read more</a> -->
+          <a class="text-decoration-underline" href="#">Read more</a>
         </div>
       </div>
     {% endfor %}
