@@ -15,15 +15,27 @@ body{
   color: #fff;
 }
 
+.icon{
+  height: 32px;
+}
+
 @include media-breakpoint-up(md) {
   html{
     font-size: 16px;
+  }
+  .icon{
+    height: 40px;
   }
 }
 
 a{
   text-decoration: underline;
   color: #fff !important;
+}
+
+
+@include media-breakpoint-up(md) {
+  
 }
 
 header{
@@ -99,5 +111,6 @@ footer{
 .example {
   -ms-overflow-style: none;
 }
+
 
 

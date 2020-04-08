@@ -1,9 +1,10 @@
 ---
 layout:     project
-title:      "Meditation Island"
+title:      "A Bigger Splash"
 subtitle:   "Sit back, relax and let your mind wander on our virtual island."
-video:      "/images/projects/meditation_island/trailer.mp4"
-image:      "/images/projects/meditation_island/cover.png"
+video:      "/images/projects/a_bigger_splash/2020-04-08_20.25.58.mp4"
+image:      "/images/projects/a_bigger_splash/cover.png"
+position:   2
 ---
 
 hoi

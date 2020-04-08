@@ -5,17 +5,36 @@ description: Better Than Life is an Immersive Studio in Amsterdam focussed on Vi
 ---
 <div class="content home">
   <div class="content-inner d-flex h-100" style="width: calc({{ site.projects.size }} * 60vw + 20vw + 10vw)">
-    {% for project in site.projects %}
+    {% assign sorted = (site.projects | sort: 'position') %}
+    {% for project in sorted %}
       <div class="project align-self-center">
-        <video class="w-100" style="cursor: pointer" {% if forloop.first %} autoplay {% endif %} poster="{{ project.image }}">
-          <source src="{{ project.video }}" type="video/mp4">
-        </video>
+        <div class="video-wrapper position-relative">
+          <video {% if forloop.first %} id="video1" {% endif %} tabindex="0" class="img-fluid" controls {% if forloop.first %} hr autoplay {% endif %} playsinline poster="{{ project.image }}">
+            <source src="{{ project.video }}" type="video/mp4" />
+          </video>
+        </div>
+
         <div class="mt-3">
           <h2 class="h5 mb-1">{{ project.title }}</h2>
           <p class="mb-1">{{ project.subtitle }}</p>
-          <a href="#">Read more</a>
+          <!-- <a href="#">Read more</a> -->
         </div>
       </div>
     {% endfor %}
   </div>
 </div>
+
+<script>
+  var video = document.querySelector('#video1');
+  var promise = video.play();
+
+  if (promise !== undefined) {
+    promise.then(_ => {
+      // Autoplay started!
+    }).catch(error => {
+      // Show something in the UI that the video is muted
+      video.muted = true;
+      video.play();
+    });
+  }
+</script>
