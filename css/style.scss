@@ -130,3 +130,21 @@ body {
   background-color: transparent;
 }
 
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: move;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.no-select:active {
+    cursor: move;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
