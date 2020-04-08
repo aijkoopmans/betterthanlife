@@ -49,13 +49,12 @@ footer{
 }
 
 .project + .project{
-  margin-left: 5rem;
+  margin-left: 10vw;
 }
-
 
 .home{
   .project{
-    width: calc(100vw - 2rem);
+    width: calc(100vw - 4rem - 25vw);
     video{
       max-height: calc(100vh - 8rem - 78px - 24px - 10rem);
       display: block;
@@ -65,10 +64,10 @@ footer{
 }
 
 
-@include media-breakpoint-up(xl) {
+@include media-breakpoint-up(lg) {
   .home{
     .project{
-      width: calc(100vw - 16rem - 40vw);
+      width: calc(100vw - 40vw);
     }
   }
 }
