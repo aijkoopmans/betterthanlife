@@ -1,0 +1,24 @@
+title: Better Than Life
+description: "Better Than Life is an Immersive Studio in Amsterdam focussed on Virtual Reality and Augmented Reality."
+url: https://www.betterthanlife.io
+author: Better Than Life
+
+
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
+paginate: 10
+permalink: pretty
+languages: ["en", "nl"]
+default_lang: "en"
+exclude_from_localization: ["scripts", "css"]
+parallel_localization: true
+date_format: "%b %-d, %Y"
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: "<!--excerpt-->"
+encoding: UTF-8
+
+collections:
+  members:
+      output: true
+  projects:
+      output: true

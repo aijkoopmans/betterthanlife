@@ -1,0 +1,40 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% seo %}
+
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.ico" />
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/code.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
+
+  <script src="{{ site.baseurl }}/scripts/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="{{ site.baseurl }}/scripts/jquery.sticky-kit.min.js"></script>
+  <script src="{{ site.baseurl }}/scripts/bootstrap.min.js"></script>
+  <script src="{{ site.baseurl }}/scripts/scripts.js"></script>
+
+  {% if page.custom_css %}
+    {% for stylesheet in page.custom_css %}
+      <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ stylesheet }}.css" type="text/css">
+    {% endfor %}
+  {% endif %}
+
+  {% if page.custom_js %}
+    {% for js_file in page.custom_js %}
+      <script src='{{ site.baseurl }}/scripts/{{ js_file }}.js' type="text/javascript"></script>
+    {% endfor %}
+  {% endif %}
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154723075-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154723075-1');
+  </script>
+</head>

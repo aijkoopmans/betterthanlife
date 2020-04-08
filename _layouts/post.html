@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% assign minutes = content | strip_html | number_of_words | divided_by: 180 %}
+{% if minutes == 0 %}
+  {% assign minutes = 1 %}
+{% endif %}
+
+
+{{ page.title }}
+{{ page.date | date: site.date_format}} • {{ page.author }} • {% if page.minutes %}
+              {{ page.minutes }} minute read
+            {% else %}
+              {{ minutes }} minute read
+            {% endif %}
+            {{ content }}

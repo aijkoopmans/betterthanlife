@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{{page.title}}
+{{page.subtitle}}
+{% if page.image != nil %}
+  {{page.image}}
+{% elsif page.video %}
+  <video id="mycarer-video" class="w-100" style="cursor: pointer" controls autoplay>
+    <source src={{ page.video }} type="video/mp4">
+  </video>
+{% endif %}
+
