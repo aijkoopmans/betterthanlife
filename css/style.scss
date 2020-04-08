@@ -1,0 +1,28 @@
+---
+---
+
+@import 'bootstrap/bootstrap';
+
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container-fluid2{
+  @extend .container-fluid;
+  padding: 8.5rem 10rem;
+  margin: 0;
+}
+
+@include media-breakpoint-down(sm) {
+  .container-fluid2{
+    padding: 1rem 2rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .container-fluid2{
+    padding: 2rem 4rem;
+  }
+}
