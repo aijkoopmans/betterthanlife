@@ -3,7 +3,7 @@
 
 @import 'bootstrap/bootstrap';
 html{
-  font-size: 12px;
+  font-size: 14px;
 }
 
 
@@ -15,53 +15,53 @@ body{
   color: #fff;
 }
 
-.icon{
+.icon img{
   height: 32px;
+}
+
+.icon + .icon{
+  margin-left: 0.5rem;
 }
 
 @include media-breakpoint-up(md) {
   html{
     font-size: 16px;
   }
-  .icon{
+  .icon img{
     height: 40px;
   }
 }
 
 a{
-  text-decoration: underline;
   color: #fff !important;
 }
 
-
-@include media-breakpoint-up(md) {
-  
+.text-decoration-underline{
+  text-decoration: underline;
 }
 
 header{
-  padding: 2rem 2rem 0 2rem;
+  padding: 2rem 2rem 2rem 2rem;
 }
 
 footer{
-  padding: 0 2rem 2rem 2rem;
-}
-
-@include media-breakpoint-down(sm) {
-  header{
-    position: fixed;
-    top: 2rem;
-  }
-  footer{
-    position: fixed;
-    bottom: 2rem;
-  }
+  padding: 2rem 2rem 2rem 2rem;
 }
 
 .content{
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 100vh;
-  padding: 0 2rem 0 4rem;
+  padding: 0 2rem 0 2rem;
+}
+
+.project + .project{
+  margin-top: 2rem;
+}
+
+@include media-breakpoint-down(sm) {
+  .content-inner{
+    width: auto !important;
+  }
 }
 
 @include media-breakpoint-up(md) {
@@ -76,17 +76,18 @@ footer{
     height: calc(100vh - 8rem - 78px - 24px);
     padding: 0 0 0 20vw;
   }
-}
 
-.project + .project{
-  margin-left: 10vw;
+  .project + .project{
+    margin-left: 10vw;
+    margin-top: 0;
+  }
 }
 
 .home{
   .project{
-    width: calc(75vw - 4rem);
+    width: calc(100vw - 4rem);
     video{
-      max-height: calc(100vh - 8rem - 78px - 24px - 10rem);
+      /*max-height: calc(100vh - 8rem - 78px - 24px - 10rem);*/
       display: block;
       object-fit: cover;
     }
@@ -94,10 +95,13 @@ footer{
 }
 
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(md) {
   .home{
     .project{
       width: calc(60vw);
+      video{
+        max-height: calc(100vh - 8rem - 78px - 24px - 10rem);
+      }
     }
   }
 }
