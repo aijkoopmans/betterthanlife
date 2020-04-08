@@ -4,14 +4,17 @@ title: Immersive Studio in Amsterdam
 description: Better Than Life is an Immersive Studio in Amsterdam focussed on Virtual Reality and Augmented Reality.
 ---
 <div class="content home">
-  <div class="content-inner d-flex h-100">
+  <div class="content-inner d-flex h-100" style="width: calc({{ site.projects.size }} * 60vw + 20vw + 10vw)">
     {% for project in site.projects %}
       <div class="project align-self-center">
-        <video class="w-100" style="cursor: pointer" autoplay poster="{{ project.image }}">
+        <video class="w-100" style="cursor: pointer" {% if forloop.first %} autoplay {% endif %} poster="{{ project.image }}">
           <source src={{ project.video }} type="video/mp4">
         </video>
-        <h2 class="h5">{{ project.title }}</h2>
-        <p>{{ project.subtitle }}</p>
+        <div class="mt-3">
+          <h2 class="h5 mb-1">{{ project.title }}</h2>
+          <p class="mb-1">{{ project.subtitle }}</p>
+          <a href="#">Read more</a>
+        </div>
       </div>
     {% endfor %}
   </div>

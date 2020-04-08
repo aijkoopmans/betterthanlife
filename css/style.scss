@@ -30,10 +30,6 @@ footer{
   padding: 0 2rem;
 }
 
-.content-inner{
-  width: 9999px;
-}
-
 @include media-breakpoint-up(md) {
   header{
     padding: 4rem 4rem 0 4rem;
@@ -54,7 +50,7 @@ footer{
 
 .home{
   .project{
-    width: calc(100vw - 4rem - 25vw);
+    width: calc(75vw - 4rem);
     video{
       max-height: calc(100vh - 8rem - 78px - 24px - 10rem);
       display: block;
@@ -67,7 +63,7 @@ footer{
 @include media-breakpoint-up(lg) {
   .home{
     .project{
-      width: calc(100vw - 40vw);
+      width: calc(60vw);
     }
   }
 }
