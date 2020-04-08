@@ -7,22 +7,45 @@ body{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #000;
+  color: #fff;
 }
 
 .container-fluid2{
   @extend .container-fluid;
-  padding: 8.5rem 10rem;
+  padding: 4rem 8rem;
   margin: 0;
 }
 
-@include media-breakpoint-down(sm) {
+
+@include media-breakpoint-down(md) {
   .container-fluid2{
     padding: 1rem 2rem;
   }
 }
 
+$content-height: calc(100vh - 8rem - 78px - 24px);
+$content-img-height: calc(100vh - 8rem - 78px - 24px - 10rem);
+$content-height-md: calc(100vh - 2rem - 78px - 24px);
+
+.content{
+  height: $content-height;
+  padding: 0 10rem;
+}
+
 @include media-breakpoint-down(md) {
-  .container-fluid2{
-    padding: 2rem 4rem;
+  .content{
+    height: $content-height-md;
+    padding: 0;
+  }
+}
+
+.home{
+  .project{
+    img{
+      display: block;
+      height: $content-img-height;
+      object-fit: cover;
+    }
   }
 }
