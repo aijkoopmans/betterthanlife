@@ -4,6 +4,12 @@ $(document).ready(function(){
      infinite: false,
      centerMode: true,
      variableWidth: true,
+     responsive: [
+      {
+        breakpoint: 768,
+        settings: "unslick"
+      }
+  ]
   });
 });
 
