@@ -28,9 +28,9 @@ $(document).ready(function(){
   });
 
 
-  if ($(window).width() <= 768){
+  if ($(window).width() < 768){
      $(window).scroll(function (){
-      var scrollPositionMiddle = $(window).scrollTop() + $(window).height() / 2;
+      var scrollPositionMiddle = $(window).scrollTop() + $(window).height() / 2 + 100;
 
       $("video").each(function( index ) {
         var videoTop = $(this).offset().top;    
