@@ -26,8 +26,9 @@ $(document).ready(function(){
   $("video").each(function( index ) {
     ensurePlayVideo(`#video${index+1}`)
   });
-  
-  if ($(window).width <= 768){
+
+
+  if ($(window).width() <= 768){
      $(window).scroll(function (){
       var scrollPositionMiddle = $(window).scrollTop() + $(window).height() / 2;
 
@@ -45,6 +46,7 @@ $(document).ready(function(){
               video2.pause();
             }
           });
+          console.log(`play video${index+2}`)
           video.play();
         }
       });
