@@ -30,34 +30,33 @@ $(document).ready(function(){
   if ($(window).width() < 768){
     playVideoByScroll();
     $(window).scroll(function (){
-      playVideoByScroll();
+      if ($(window).scrollTop() > 10){
+        playVideoByScroll();
+      }
     });
   }
 });
 
 function playVideoByScroll(){
-  if ($(window).scrollTop() < 10){
-          return;
-      }
-      var scrollPositionMiddle = $(window).scrollTop() + $(window).height() / 2;
+  var scrollPositionMiddle = $(window).scrollTop() + $(window).height() / 2;
 
-      $("video").each(function( index ) {
-        var videoTop = $(this).offset().top;    
-        var videoBottom = $(this).offset().top + $(this).height();    
+  $("video").each(function( index ) {
+    var videoTop = $(this).offset().top;    
+    var videoBottom = $(this).offset().top + $(this).height();    
 
-        if (videoTop < scrollPositionMiddle && videoBottom > scrollPositionMiddle){
-          var video = document.querySelector(`#video${index+1}`);
-    
-          $("video").each(function( index2 ) {
-            if (index2 != index){
-              var video2 = document.querySelector(`#video${index2+1}`);
-              video2.pause();
-            }
-          });
-          console.log(`play video${index+1}`)
-          video.play();
+    if (videoTop < scrollPositionMiddle && videoBottom > scrollPositionMiddle){
+      var video = document.querySelector(`#video${index+1}`);
+
+      $("video").each(function( index2 ) {
+        if (index2 != index){
+          var video2 = document.querySelector(`#video${index2+1}`);
+          video2.pause();
         }
       });
+      console.log(`play video${index+1}`)
+      video.play();
+    }
+  });
 }
 
 
