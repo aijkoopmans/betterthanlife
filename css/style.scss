@@ -162,6 +162,10 @@ body {
   -ms-animation: fadeIn ease 1s;
 }
 
+div:focus {
+    outline: none;
+}
+
 
 @keyframes fadeIn{
   0% {
