@@ -27,14 +27,18 @@ $(document).ready(function(){
     ensurePlayVideo(`#video${index+1}`)
   });
 
-
   if ($(window).width() < 768){
-     $(window).scroll(function (){
-      if ($(window).scrollTop() < 10){
-          console.log('return');
+    playVideoByScroll();
+    $(window).scroll(function (){
+      playVideoByScroll();
+    });
+  }
+});
+
+function playVideoByScroll(){
+  if ($(window).scrollTop() < 10){
           return;
       }
-      console.log('no -return');
       var scrollPositionMiddle = $(window).scrollTop() + $(window).height() / 2;
 
       $("video").each(function( index ) {
@@ -54,10 +58,7 @@ $(document).ready(function(){
           video.play();
         }
       });
-    });
-  }
-});
-
+}
 
 
 function muteUnmute(selector){
