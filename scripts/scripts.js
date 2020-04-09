@@ -23,9 +23,7 @@ $(document).ready(function(){
     var promise = video.play();
   });
 
-  $("video").each(function( index ) {
-    ensurePlayVideo(`#video${index+1}`)
-  });
+  
 
   if ($(window).width() < 768){
     playVideoByScroll();
@@ -53,7 +51,8 @@ function playVideoByScroll(){
           video2.pause();
         }
       });
-      console.log(`play video${index+1}`)
+
+      ensurePlayVideo(`#video${index+1}`)
       video.play();
     }
   });
