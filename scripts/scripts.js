@@ -22,6 +22,38 @@ $(document).ready(function(){
     var video = document.querySelector(`#video${nextSlide+1}`);
     var promise = video.play();
   });
+
+   $("video").each(function( index ) {
+        ensurePlayVideo(`#video${index+1}`)
+    });
+
+   $(window).scroll(function ()
+  {
+    var scrollPosition = $(window).scrollTop();
+    var scrollPositionBottom = $(window).scrollTop() + $(window).height();
+
+    $("video").each(function( index ) {
+      var videoTop = $(this).offset().top;    
+      var videoBottom = $(this).offset().top + $(this).height();    
+      var video = document.querySelector(`#video${index+1}`);
+
+      if (scrollPosition > videoTop && videoBottom > scrollPosition) {
+        video.pause()
+        var nextVideo = document.querySelector(`#video${index+2}`);
+        if (nextVideo) {
+          nextVideo.play()
+        }
+      }
+
+      if (videoBottom > scrollPositionBottom && videoTop > scrollPositionBottom){
+        video.pause()
+        var previousVideo = document.querySelector(`#video${index-1}`);
+        if (previousVideo) {
+          previousVideo.play()
+        }
+      }
+    });
+  });
 });
 
 
@@ -44,8 +76,8 @@ function toggleMuteUnmuteButtons(selector){
   }
 }
 
-function ensurePlayFirstVideo(){
-  var video = document.querySelector('#video1');
+function ensurePlayVideo(selector){
+  var video = document.querySelector(selector);
   var promise = video.play();
 
   if (promise !== undefined) {
@@ -55,6 +87,7 @@ function ensurePlayFirstVideo(){
     }).catch(error => {
       // Show something in the UI that the video is muted
       video.muted = true;
+      toggleMuteUnmuteButtons(selector)
     });
   }
 }

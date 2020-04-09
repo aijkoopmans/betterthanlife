@@ -83,11 +83,8 @@ footer{
 
 .mute-unmute{
   position: absolute;
-  /*left: 0;*/
   margin-top: -2.5rem;
   right: 1.2rem;
-
-  /*margin-top: -2rem;*/
 }
 
 .home{
@@ -135,23 +132,24 @@ body {
   background-color: transparent;
 }
 
+@include media-breakpoint-up(md) {
+  .no-select {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      cursor: move;
+      cursor: -moz-grab;
+      cursor: -webkit-grab;
+  }
 
-.no-select {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: move;
-    cursor: -moz-grab;
-    cursor: -webkit-grab;
-}
-
-.no-select:active {
-    cursor: move;
-    cursor: -moz-grabbing;
-    cursor: -webkit-grabbing;
+  .no-select:active {
+      cursor: move;
+      cursor: -moz-grabbing;
+      cursor: -webkit-grabbing;
+  }
 }
 
 .fade-in {
