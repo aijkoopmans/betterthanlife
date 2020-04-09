@@ -60,11 +60,6 @@ footer{
   margin-bottom: 2rem;
 }
 
-.project + .project{
-  /*margin-left: 5vw;*/
-}
-
-
 @include media-breakpoint-up(md) {
   header{
     padding: 4rem 6rem 0 6rem;
@@ -84,6 +79,15 @@ footer{
     height: calc(100vh - 8rem - 78px - 24px);
     margin-bottom: 0;
   }
+}
+
+.mute-unmute{
+  position: absolute;
+  /*left: 0;*/
+  margin-top: -2.5rem;
+  right: 1.2rem;
+
+  /*margin-top: -2rem;*/
 }
 
 .home{
