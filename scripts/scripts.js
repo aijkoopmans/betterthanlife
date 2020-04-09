@@ -43,15 +43,14 @@ $(document).ready(function(){
 
         if (videoTop < scrollPositionMiddle && videoBottom > scrollPositionMiddle){
           var video = document.querySelector(`#video${index+1}`);
-          var nextVideo = document.querySelector(`#video${index+2}`);
-          var previousVideo = document.querySelector(`#video${index-1}`);
+    
           $("video").each(function( index2 ) {
             if (index2 != index){
               var video2 = document.querySelector(`#video${index2+1}`);
               video2.pause();
             }
           });
-          console.log(`play video${index+2}`)
+          console.log(`play video${index+1}`)
           video.play();
         }
       });
