@@ -76,7 +76,7 @@ footer{
     margin-left: 10vw;
   }
   .project{
-    height: calc(100vh - 8rem - 78px - 24px);
+    height: calc(100vh - 8rem - 78px - 48px);
     margin-bottom: 0;
   }
 }
@@ -106,7 +106,7 @@ footer{
     .project{
       width: calc(60vw);
       video{
-        max-height: calc(100vh - 8rem - 78px - 24px - 10rem);
+        max-height: calc(100vh - 8rem - 78px - 48px - 10rem);
       }
     }
   }
@@ -163,9 +163,8 @@ body {
 }
 
 div:focus {
-    outline: none;
+  outline: none;
 }
-
 
 @keyframes fadeIn{
   0% {
