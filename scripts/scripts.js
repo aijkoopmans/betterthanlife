@@ -30,7 +30,7 @@ $(document).ready(function(){
   if ($(window).width() < 768){
     playVideoByScroll();
     $(window).scroll(function (){
-      if ($(window).scrollTop() > 10){
+      if ($(window).scrollTop() > 2){
         playVideoByScroll();
       }
     });
