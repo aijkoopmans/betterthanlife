@@ -23,37 +23,33 @@ $(document).ready(function(){
     var promise = video.play();
   });
 
-   $("video").each(function( index ) {
-        ensurePlayVideo(`#video${index+1}`)
-    });
-
-   $(window).scroll(function ()
-  {
-    var scrollPosition = $(window).scrollTop();
-    var scrollPositionBottom = $(window).scrollTop() + $(window).height();
-
-    $("video").each(function( index ) {
-      var videoTop = $(this).offset().top;    
-      var videoBottom = $(this).offset().top + $(this).height();    
-      var video = document.querySelector(`#video${index+1}`);
-
-      if (scrollPosition > videoTop && videoBottom > scrollPosition) {
-        video.pause()
-        var nextVideo = document.querySelector(`#video${index+2}`);
-        if (nextVideo) {
-          nextVideo.play()
-        }
-      }
-
-      if (videoBottom > scrollPositionBottom && videoTop > scrollPositionBottom){
-        video.pause()
-        var previousVideo = document.querySelector(`#video${index-1}`);
-        if (previousVideo) {
-          previousVideo.play()
-        }
-      }
-    });
+  $("video").each(function( index ) {
+    ensurePlayVideo(`#video${index+1}`)
   });
+  
+  if ($(window).width <= 768){
+     $(window).scroll(function (){
+      var scrollPositionMiddle = $(window).scrollTop() + $(window).height() / 2;
+
+      $("video").each(function( index ) {
+        var videoTop = $(this).offset().top;    
+        var videoBottom = $(this).offset().top + $(this).height();    
+
+        if (videoTop < scrollPositionMiddle && videoBottom > scrollPositionMiddle){
+          var video = document.querySelector(`#video${index+1}`);
+          var nextVideo = document.querySelector(`#video${index+2}`);
+          var previousVideo = document.querySelector(`#video${index-1}`);
+          $("video").each(function( index2 ) {
+            if (index2 != index){
+              var video2 = document.querySelector(`#video${index2+1}`);
+              video2.pause();
+            }
+          });
+          video.play();
+        }
+      });
+    });
+  }
 });
 
 
