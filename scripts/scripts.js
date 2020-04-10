@@ -23,8 +23,6 @@ $(document).ready(function(){
     var promise = video.play();
   });
 
-  
-
   if ($(window).width() < 768){
     playVideoByScroll();
     $(window).scroll(function (){
