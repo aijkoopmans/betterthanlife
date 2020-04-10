@@ -7,7 +7,7 @@
 
   {% include header.html %}
   <div class="text-center mt-md-4">
-    <video tabindex="0" class="img-fluid" playsinline controls poster="{{ page.image }}">
+    <video tabindex="0" class="intro-video img-fluid" playsinline controls poster="{{ page.image }}">
       <source src="{{ page.video }}" type="video/mp4" />
     </video>
   </div>
@@ -15,6 +15,17 @@
   <div class="container my-3 my-md-5">
     <h1>{{page.title}}</h1>
     {{ content }}
+    {% if page.videos %}
+      <div class="row justify-content-between mt-4 mt-md-5">
+        {% for video in page.videos %}
+          <div class="col"> 
+            <video tabindex="0" class="img-fluid" playsinline controls>
+              <source src="{{ video }}" type="video/mp4" />
+            </video>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
   {% include footer.html %}
 </body>
