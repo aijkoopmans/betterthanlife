@@ -59,7 +59,7 @@ footer{
 }
 
 .container{
-  max-width: 800px;
+  max-width: calc(800px + 12rem);
   padding: 0 1rem;
 }
 
@@ -88,7 +88,7 @@ footer{
   }
 
   .container{
-    padding: 0 1rem;
+    padding: 0 6rem;
   }
 
   .content{
@@ -117,7 +117,6 @@ footer{
     video{
       max-height: calc(100vh - 8rem - 78px - 48px - 10rem);
       width: auto;
-      max-width: 60vw;
     }
   }
 }
