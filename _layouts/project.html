@@ -1,13 +1,22 @@
----
-layout: default
----
-{{page.title}}
-{{page.subtitle}}
-{% if page.image != nil %}
-  {{page.image}}
-{% elsif page.video %}
-  <video id="mycarer-video" class="w-100" style="cursor: pointer" controls autoplay>
-    <source src={{ page.video }} type="video/mp4">
-  </video>
-{% endif %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+{% include head.html %}
+
+<body class="single-project">
+
+  {% include header.html %}
+  <div class="text-center mt-md-4">
+    <video tabindex="0" class="img-fluid" playsinline controls poster="{{ page.image }}">
+      <source src="{{ page.video }}" type="video/mp4" />
+    </video>
+  </div>
+
+  <div class="container my-3 my-md-5">
+    <h1>{{page.title}}</h1>
+    {{ content }}
+  </div>
+  {% include footer.html %}
+</body>
+</html>
 

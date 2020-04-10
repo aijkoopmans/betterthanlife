@@ -53,11 +53,30 @@ footer{
 
 
 .content{
+  .text{
+    padding: 0 1rem;
+  }
+}
+
+.container{
+  max-width: 800px;
   padding: 0 1rem;
 }
 
-.project{
-  margin-bottom: 2rem;
+.home{
+  .project{
+    margin-bottom: 2rem;
+    video{
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
+
+.single-project{
+  video{
+    width: 100%;
+  }
 }
 
 @include media-breakpoint-up(md) {
@@ -68,16 +87,38 @@ footer{
     padding: 0 6rem 4rem 6rem;
   }
 
-  .content{
-    padding: 0;
+  .container{
+    padding: 0 1rem;
   }
 
-  .project + .project{
-    margin-left: 10vw;
+  .content{
+    .text{
+      padding: 0;
+    }
   }
-  .project{
-    height: calc(100vh - 8rem - 78px - 48px);
-    margin-bottom: 0;
+
+  .home{
+    .project + .project{
+      margin-left: 10vw;
+    }
+    .project{
+      height: calc(100vh - 8rem - 78px - 48px);
+      margin-bottom: 0;
+      width: 60vw;
+      video{
+        margin-left: 0;
+        max-height: calc(100vh - 8rem - 78px - 48px - 10rem);
+        width: 100%;
+      }
+    }
+  }
+
+  .single-project{
+    video{
+      max-height: calc(100vh - 8rem - 78px - 48px - 10rem);
+      width: auto;
+      max-width: 60vw;
+    }
   }
 }
 
@@ -85,29 +126,6 @@ footer{
   position: absolute;
   margin-top: -2.5rem;
   right: 1.2rem;
-}
-
-.home{
-  .project{
-    /*width: calc(80vw);*/
-    video{
-      display: block;
-      object-fit: cover;
-    }
-  }
-}
-
-
-@include media-breakpoint-up(md) {
-  .home{
-    .project{
-      width: calc(60vw);
-      video{
-        max-height: calc(100vh - 8rem - 78px - 48px - 10rem);
-        width: 100%;
-      }
-    }
-  }
 }
 
 ::-webkit-scrollbar {
