@@ -7,6 +7,7 @@ image:      "/images/projects/a_bigger_splash/cover.png"
 position:   2
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris placerat orci in augue aliquam posuere. Ut vulputate leo eget imperdiet maximus. Aenean eget ante ex. Praesent at augue hendrerit, viverra eros nec, interdum purus. Proin bibendum nisi vel erat iaculis bibendum. Nam eleifend id eros ut bibendum. Nunc magna erat, sodales eget sodales sed, viverra vel tellus.
+Our first project was a tribute to David Hockney’s iconic painting ‘A Bigger Splash’. We recreated the painting as true to the original style as we could, actually making the environment feel like it had
+Been painted by Hockney’s brushstrokes. We start off in a typical museum environment and as the user walks up they are sucked into the painting.  Our interpretation takes place before the actual splash depicted in the painting, instead letting the user be the imagined cause of the splash by jumping into the pool. 
 
-Suspendisse auctor venenatis sem ut interdum. Aliquam in nunc at massa varius imperdiet. Proin mollis porttitor tincidunt. Nunc ac scelerisque justo, ut suscipit sapien. Aenean feugiat volutpat justo, at finibus est malesuada nec. Quisque fringilla venenatis lectus at gravida. Donec quis augue metus. Ut pulvinar mauris eu tellus dapibus, eu bibendum leo pulvinar. Cras at tempus mauris. Ut vestibulum sagittis quam. Ut ex enim, ultrices in magna eu, blandit dapibus nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam faucibus neque ut enim lacinia porttitor. Vivamus sem libero, feugiat at libero eget, tempus finibus tellus.
+This experience showcased a playful way in which we think museums can utilize VR to engage younger audiences with the optional addition of a voice-over giving more context for the original painting.

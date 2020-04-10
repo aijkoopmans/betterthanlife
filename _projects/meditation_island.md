@@ -6,9 +6,12 @@ video:      "/images/projects/meditation_island/2020-04-08_18.54.22.mp4"
 image:      "/images/projects/meditation_island/cover.png"
 position:   1
 ---
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris placerat orci in augue aliquam posuere. Ut vulputate leo eget imperdiet maximus. Aenean eget ante ex. Praesent at augue hendrerit, viverra eros nec, interdum purus. Proin bibendum nisi vel erat iaculis bibendum. Nam eleifend id eros ut bibendum. Nunc magna erat, sodales eget sodales sed, viverra vel tellus.
-</p>
-<p>
-Suspendisse auctor venenatis sem ut interdum. Aliquam in nunc at massa varius imperdiet. Proin mollis porttitor tincidunt. Nunc ac scelerisque justo, ut suscipit sapien. Aenean feugiat volutpat justo, at finibus est malesuada nec. Quisque fringilla venenatis lectus at gravida. Donec quis augue metus. Ut pulvinar mauris eu tellus dapibus, eu bibendum leo pulvinar. Cras at tempus mauris. Ut vestibulum sagittis quam. Ut ex enim, ultrices in magna eu, blandit dapibus nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam faucibus neque ut enim lacinia porttitor. Vivamus sem libero, feugiat at libero eget, tempus finibus tellus.
-</p>
+
+Welcome to Meditation Island. Sit back, relax and let your mind wander. Isn't this Better Than Life?
+
+Meditation Island is our first in a series of high-fidelity meditation experiences. Our aim was to raise the bar of meditative experiences in VR to truly transport you to a beautiful dream location.
+Birds high up in the sky, waves rolling in on the shore, the wind blowing through palm trees and plants that grow on your private secluded island all contribute both visually and in sound to a surreal experience that practically makes you feel the ocean breeze.
+
+The experience features a dynamic day and night cycle, with a cozy campfire that turns on when the sun sets. The cycle can be adjusted to your liking, both when in the day you’d like to start as well as the speed of day progression. 
+
+You are guided by a meditative voice uniquely tailored to the island environment to help ease you into this truly immersive experience.
