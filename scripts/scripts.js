@@ -29,6 +29,16 @@ $(document).ready(function(){
   });
 });
 
+function playPause(selector){
+  var video = document.querySelector(selector);
+  if (video.paused){
+    console.log('play');
+    video.play();
+  } else {
+    console.log('pause');
+    video.pause();
+  }
+}
 
 function muteUnmute(selector){
   var video = document.querySelector(selector);

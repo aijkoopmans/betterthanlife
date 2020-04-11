@@ -8,9 +8,11 @@ description: Better Than Life is an Immersive Studio in Amsterdam focussed on Vi
     <div class="slick-scroll no-select">
       {% assign sorted = (site.projects | sort: 'position') %}
       {% for project in sorted %}
-        <div class="project d-flex">
+        <div class="project d-flex position-relative">
+          <div class="previous-slide" onclick="$('.slick-scroll').slick('slickGoTo', {{ forloop.index | minus:'1' }});"></div>
+          <div class="next-slide" onclick="$('.slick-scroll').slick('slickGoTo', {{ forloop.index | minus:'1' }});"></div>
           <div class="align-self-center position-relative">
-            <video id="video{{ forloop.index }}" tabindex="0" class="img-fluid" {% if forloop.first %} autoplay {% endif %} playsinline loop poster="{{ project.image }}">
+            <video onclick='playPause("#video{{ forloop.index }}")' id="video{{ forloop.index }}" tabindex="0" class="img-fluid" {% if forloop.first %} autoplay {% endif %} playsinline loop poster="{{ project.image }}">
               <source src="{{ project.video }}" type="video/mp4" />
             </video>
             <div class="mute-unmute d-none d-md-block" onclick='muteUnmute("#video{{ forloop.index }}")'>
