@@ -13,7 +13,12 @@ $(document).ready(function(){
   });
 
   $('video').each(function () {
-      toggleMuteUnmuteButtons(`#${this.id}`);
+      if ($(window).width() < 768){
+        var video = document.querySelector(`#${this.id}`);
+        video.controls = true 
+      } else {
+        toggleMuteUnmuteButtons(`#${this.id}`);
+      }
   });
 
   $('.slick-scroll').on('beforeChange', function(event, slick, currentSlide, nextSlide){
@@ -22,39 +27,7 @@ $(document).ready(function(){
     var video = document.querySelector(`#video${nextSlide+1}`);
     var promise = video.play();
   });
-
-  if ($(window).width() < 768){
-    playVideoByScroll();
-    $(window).scroll(function (){
-      if ($(window).scrollTop() > 2){
-        playVideoByScroll();
-      }
-    });
-  }
 });
-
-function playVideoByScroll(){
-  var scrollPositionMiddle = $(window).scrollTop() + $(window).height() / 2;
-
-  $("video").each(function( index ) {
-    var videoTop = $(this).offset().top;    
-    var videoBottom = $(this).offset().top + $(this).height();    
-
-    if (videoTop < scrollPositionMiddle && videoBottom > scrollPositionMiddle){
-      var video = document.querySelector(`#video${index+1}`);
-
-      $("video").each(function( index2 ) {
-        if (index2 != index){
-          var video2 = document.querySelector(`#video${index2+1}`);
-          video2.pause();
-        }
-      });
-
-      ensurePlayVideo(`#video${index+1}`)
-      video.play();
-    }
-  });
-}
 
 
 function muteUnmute(selector){
