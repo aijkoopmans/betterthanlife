@@ -13,12 +13,12 @@ $(document).ready(function(){
   });
 
   $('video').each(function () {
-      if ($(window).width() < 768){
-        var video = document.querySelector(`#${this.id}`);
-        video.controls = true 
-      } else {
-        toggleMuteUnmuteButtons(`#${this.id}`);
-      }
+    if ($(window).width() < 768){
+      var video = document.querySelector(`#${this.id}`);
+      video.controls = true 
+    } else {
+      toggleMuteUnmuteButtons(`#${this.id}`);
+    }
   });
 
   $('.slick-scroll').on('beforeChange', function(event, slick, currentSlide, nextSlide){
