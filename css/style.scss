@@ -3,7 +3,7 @@
 
 @import 'bootstrap/bootstrap';
 html{
-  font-size: 14px;
+  font-size: 16px;
 }
 
 body{
@@ -23,9 +23,6 @@ body{
 }
 
 @include media-breakpoint-up(md) {
-  html{
-    font-size: 16px;
-  }
   .icon img{
     height: 40px;
   }
