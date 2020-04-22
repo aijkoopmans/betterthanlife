@@ -6,7 +6,7 @@ description: Better Than Life is an Immersive Studio in Amsterdam focussed on Vi
 <div class="home">
   <div class="content fade-in">
     <div class="slick-scroll no-select">
-      {% assign sorted = (site.projects | sort: 'position') %}
+      {% assign sorted = site.projects | sort: 'position' %}
       {% for project in sorted %}
         <div class="project d-flex position-relative">
           <div class="previous-slide" onclick="$('.slick-scroll').slick('slickGoTo', {{ forloop.index | minus:'1' }});"></div>

@@ -1,6 +1,7 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+{% include head.html %}
 
 {% assign minutes = content | strip_html | number_of_words | divided_by: 180 %}
 {% if minutes == 0 %}
@@ -8,10 +9,22 @@ layout: default
 {% endif %}
 
 
-{{ page.title }}
-{{ page.date | date: site.date_format}} • {{ page.author }} • {% if page.minutes %}
+<body class="single-post">
+  {% include header.html %}
+  <div class="text-center mt-md-4">
+  	<img class="img-fluid intro-video" src="{{ page.image }}" alt="{{ page.title }}">
+  </div>
+
+  <div class="container my-3 my-md-5">
+  	<span class="text-muted">{{ page.date | date: site.date_format}} • {% if page.minutes %}
               {{ page.minutes }} minute read
             {% else %}
               {{ minutes }} minute read
-            {% endif %}
-            {{ content }}
+            {% endif %}</span>
+    <h1>{{page.title}}</h1>
+    {{ content }}
+  </div>
+  {% include footer.html %}
+</body>
+</html>
+
