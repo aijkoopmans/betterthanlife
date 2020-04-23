@@ -7,13 +7,13 @@ sitemap: true
 
 <div class="blog">
   <div class="container">
-    <div class="row">
+    <div class="row mt-md-4">
       {% for post in site.posts %}
         {% assign minutes = post.content | strip_html | number_of_words | divided_by: 180 %}
         {% if minutes == 0 %}
           {% assign minutes = 1 %}
         {% endif %}
-        <div class="col-lg-6 mb-5">
+        <div class="col-lg-6 my-lg-5 my-2 order-2 order-lg-1">
           <p class="text-muted mb-1"><span class="text-muted">{{ post.date | date: site.date_format}} • {% if post.minutes %}
               {{ post.minutes }} minute read
             {% else %}
@@ -29,7 +29,7 @@ sitemap: true
           </p>
           <a class="text-decoration-underline" href="{{ post.url }}">Read the full post</a>
         </div>
-        <div class="col-lg-6 mb-5">
+        <div class="col-lg-6 my-lg-5 my-2 order-1 order-lg-2">
           <a href="{{ post.url }}"><img class="img-fluid intro-video" src="{{ post.image }}" alt="{{ post.title }}"></a>
         </div>
       {% endfor %}

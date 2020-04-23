@@ -78,6 +78,10 @@ footer{
 
 .single-post{
   @extend .single-project;
+
+  .content a {
+    @extend .text-decoration-underline;
+  }
 }
 
 @include media-breakpoint-up(md) {
