@@ -84,6 +84,14 @@ footer{
   }
 }
 
+.blog{
+  .intro-video{
+    max-width: calc(800px + 12rem);
+    width: 100%;
+    padding: 0;
+  }
+}
+
 @include media-breakpoint-up(md) {
   header{
     padding: 4rem 6rem 0 6rem;
@@ -94,6 +102,12 @@ footer{
 
   .container{
     padding: 0 6rem;
+  }
+
+  .blog{
+    .intro-video{
+      padding: 0 6rem;
+    }
   }
 
   .content{

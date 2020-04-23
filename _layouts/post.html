@@ -16,11 +16,13 @@
   </div>
 
   <div class="container my-3 my-md-5 content">
-  	<span class="text-muted">{{ page.date | date: site.date_format}} • {% if page.minutes %}
-              {{ page.minutes }} minute read
-            {% else %}
-              {{ minutes }} minute read
-            {% endif %}</span>
+  	<span class="text-muted">
+		{{ page.date | date: site.date_format}} • {% if page.minutes %}
+          {{ page.minutes }} minute read
+        {% else %}
+          {{ minutes }} minute read
+        {% endif %}
+    </span>
     <h1>{{page.title}}</h1>
     {{ content }}
   </div>
