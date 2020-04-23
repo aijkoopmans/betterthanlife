@@ -53,7 +53,7 @@ First we take our exported heightmap and import it as a landscape in Unreal. We 
  <img class="w-100" src="/images/posts/recreating_nordic_fjords/reine_selection_google_maps.jpg" />
 </div>
 
-Unfortunately, some lakes don't have any water due to the fact that they aren't equal to the lowest point of the height map, which we lowered. Nevertheless, a good starting point for your unreal landscape.
+Unfortunately, some lakes don't have any water due to the fact that they aren't equal to the lowest point of the height map, which we lowered. Nevertheless, this is a good starting point for your unreal landscape.
 
 <script>
 $(window).on('load',function() {
