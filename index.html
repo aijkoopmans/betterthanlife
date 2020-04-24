@@ -24,7 +24,14 @@ description: Better Than Life is an Immersive Studio in Amsterdam focussed on Vi
               <a href="{{project.url}}" class="text-decoration-none">
                 <h2 class="h5 mb-1">{{ project.title }}</h2>
                 <p class="mb-1">{{ project.subtitle }}</p>
-                <a class="text-decoration-underline" href="{{project.url}}">Read more</a>
+                <div class="d-md-flex">
+                  <a class="text-decoration-underline" href="{{project.url}}">Read more</a>
+                  {% if project.steam_url %}
+                    <a class="d-block ml-md-3 mt-1 mt-md-0 text-decoration-underline" target="_blank" href="{{project.steam_url}}">
+                     View in Steam Store
+                    </a>
+                  {% endif %}
+                </div>
               </a>
             </div>
           </div>

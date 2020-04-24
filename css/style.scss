@@ -15,7 +15,11 @@ body{
 }
 
 .icon img{
-  height: 32px;
+  height: 1.5rem;
+}
+
+.icon-text{
+  height: 1rem;
 }
 
 .icon + .icon{
@@ -24,7 +28,7 @@ body{
 
 @include media-breakpoint-up(md) {
   .icon img{
-    height: 40px;
+    height: 2.5rem;
   }
 }
 
@@ -42,6 +46,13 @@ a{
 
 header{
   padding: 1rem 1rem 2rem 1rem;
+  @include media-breakpoint-up(md) {
+    nav{
+      a{
+        font-size: 1.25rem;
+      }
+    }
+  }
 }
 
 footer{
