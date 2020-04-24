@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      "Recreating Nordic Fjords in VR"
+title:      "Recreating a Real World Landscape in VR"
 categories: landscape unreal world-machine virtual-reality
-image:      "/images/posts/recreating_nordic_fjords/reine_overview.jpg"
+image:      "/images/posts/recreating_a_real_world_landscape_in_vr/reine_overview.jpg"
 sitemap:    true
 excerpt:    "Sculpting your own landscape in Unreal can be hard. You might lose your inspiration while trying to make it look natural. Why don’t you use a real life existing landscape to get you started?"
 ---
@@ -30,8 +30,8 @@ We looked for an iconic location that would be instantly recognizable when compa
 [GDAL](https://gdal.org){:target="_blank"} tools (which are wrapped in a nice [QGIS GUI](https://www.qgis.org){:target="_blank"}) is able to merge the received files. After adding some hillshade, we get the following image of the Reine Fjord (left). For comparison we added the Google Maps (right).
 
 <div id="images1" class="mb-3 twentytwenty-container">
- <img class="w-100" src="/images/posts/recreating_nordic_fjords/reine_selection_hillshade.jpg" />
- <img class="w-100" src="/images/posts/recreating_nordic_fjords/reine_selection_google_maps.jpg" />
+ <img class="w-100" src="/images/posts/recreating_a_real_world_landscape_in_vr/reine_selection_hillshade.jpg" />
+ <img class="w-100" src="/images/posts/recreating_a_real_world_landscape_in_vr/reine_selection_google_maps.jpg" />
 </div>
 
 The [landscape technical guide](https://docs.unrealengine.com/en-US/Engine/Landscape/TechnicalGuide/index.html#recommendedlandscapesizes){:target="_blank"} of Unreal suggests a number of sizes that maximize the area while minimizing the number of landscape components. We chose to crop the resulting image to an 8129x8129 image, which represents about 8 square kilometers in real life. 
@@ -49,8 +49,8 @@ Finally, we can export it as a RAW16, which Unreal will accept.
 First we take our exported heightmap and import it as a landscape in Unreal. We like using [Brushify](https://www.brushify.io){:target="_blank"} for our landscape material as it handles some of the time consuming aspects of creating a proper material automatically. What you see above is just a simple two layer material setup, using [Quixel](https://quixel.com/bridge){:target="_blank"} materials, to start with. Finally, we add 8 square kilometers of water and we get our final result (left). And again, Google maps for comparison (right). 
 
 <div id="images2" class="mb-3 twentytwenty-container">
- <img class="w-100" src="/images/posts/recreating_nordic_fjords/reine_selection_unreal.jpg" />
- <img class="w-100" src="/images/posts/recreating_nordic_fjords/reine_selection_google_maps.jpg" />
+ <img class="w-100" src="/images/posts/recreating_a_real_world_landscape_in_vr/reine_selection_unreal.jpg" />
+ <img class="w-100" src="/images/posts/recreating_a_real_world_landscape_in_vr/reine_selection_google_maps.jpg" />
 </div>
 
 Unfortunately, some lakes don't have any water due to the fact that they aren't equal to the lowest point of the height map, which we lowered. Nevertheless, this is a good starting point for your unreal landscape.
