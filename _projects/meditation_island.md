@@ -4,7 +4,7 @@ title:      "Meditation Island"
 subtitle:   "Sit back, relax and let your mind wander on our virtual island."
 video:      "/images/projects/meditation_island/2020-04-08_18.54.22.mp4"
 image:      "/images/projects/meditation_island/cover.png"
-steam_url:  "https://store.steampowered.com/app/1301850/Meditation_VR/?beta=1"
+<!-- steam_url:  "https://store.steampowered.com/app/1301850/Meditation_VR/?beta=1" -->
 position:   1
 
 ---
