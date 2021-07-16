@@ -4,7 +4,7 @@ title:      "Meditation VR"
 subtitle:   "Sit back, relax and let your mind wander on our virtual island."
 video:      "/images/projects/meditation_vr/V4_Meditation_VR_Remaster_Trailer_V4_100MB.mp4"
 image:      "/images/projects/meditation_vr/cover.png"
-steam_url:  "https://store.steampowered.com/app/1301850/Meditation_VR/"
+steam_url:  "https://store.steampowered.com/app/1301850/Meditation_VR?utm_source=betterthanlife.io"
 position:   1
 
 ---
