@@ -27,9 +27,14 @@
       </div>
     {% endif %}
     {% if page.steam_url %}
-      <a class="mt-1 mt-md-0 text-decoration-underline" target="_blank" href="{{page.steam_url}}">
-       View on Steam
-      </a>
+      <a class="h4 mt-1 mt-md-0 text-decoration-underline" target="_blank" href="{{page.steam_url}}">
+       View on Steam</a>
+    {% endif %}
+    {% if page.roadmap_url %}
+      <a class="h4 mt-1 ml-3 mt-md-0 text-decoration-underline" target="_blank" href="{{page.roadmap_url}}">Roadmap</a>
+    {% endif %}
+    {% if page.website_url %}
+      <a class="h4 mt-1 ml-3 mt-md-0 text-decoration-underline" target="_blank" href="{{page.website_url}}">Website</a>
     {% endif %}
   </div>
   {% include footer.html %}
