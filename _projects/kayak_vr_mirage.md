@@ -6,7 +6,7 @@ video:      "/images/projects/kayak_vr_mirage/08_07_2021_Kayak_Trailer_PiP_V3_10
 image:      "/images/projects/kayak_vr_mirage/cover_2.png"
 steam_url:  "https://store.steampowered.com/app/1683340/Kayak_VR_Mirage?utm_source=betterthanlife.io"
 roadmap_url:  "https://trello.com/b/hSKybmxa"
-website_url: "https://www.kayakvr.com"
+website_url: "https://kayakvr.com"
 position:   0
 ---
 
