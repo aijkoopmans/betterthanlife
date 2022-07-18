@@ -2,8 +2,8 @@
 layout:     project
 title:      "Kayak VR: Mirage"
 subtitle:   "Kayak VR: Mirage is a jaw-dropping and exhilarating journey through beautiful locations, made for Virtual Reality."
-video:      "/images/projects/kayak_vr_mirage/08_07_2021_Kayak_Trailer_PiP_V3_100MB_H264.mp4"
-image:      "/images/projects/kayak_vr_mirage/cover_2.png"
+video:      "/images/projects/kayak_vr_mirage/FinalTrailer_16_9_Website_100MB.mp4"
+image:      "/images/projects/kayak_vr_mirage/cover.png"
 steam_url:  "https://store.steampowered.com/app/1683340/Kayak_VR_Mirage?utm_source=betterthanlife.io"
 roadmap_url:  "https://trello.com/b/hSKybmxa"
 website_url: "https://kayakvr.com"
