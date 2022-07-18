@@ -132,12 +132,12 @@ footer{
       margin-left: 10vw;
     }
     .project{
-      height: calc(100vh - 5rem - 120px - 48px);
+      height: calc(100vh - 5rem - 100px - 48px);
       margin-bottom: 0;
       width: 59vw;
       video{
         margin-left: 0;
-        max-height: calc(100vh - 5rem - 120px - 48px - 10rem);
+        max-height: calc(100vh - 5rem - 100px - 48px - 10rem);
         width: 100%;
       }
     }
@@ -145,7 +145,7 @@ footer{
 
   .single-project{
     .intro-video{
-      max-height: calc(100vh - 5rem - 120px - 48px - 10rem);
+      max-height: calc(100vh - 5rem - 100px - 48px - 10rem);
       width: auto;
     }
   }
