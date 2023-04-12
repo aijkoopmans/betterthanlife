@@ -32,7 +32,7 @@ Kayak VR: Mirage is a kayaking simulator made for VR using Unreal Engine, with a
 <h3>Qualifications</h3>
 
 <ul>
-  <li>Experience in building environments in-engine (Unreal Engine preferred)</li>
+  <li>Experience with building environments in-engine (Unreal Engine preferred)</li>
   <li>Able to test quick and often in VR</li>
   <li>Able to work remotely (through Git)</li>
 </ul>
