@@ -22,3 +22,5 @@ collections:
       output: true
   projects:
       output: true
+  jobs:
+      output: true

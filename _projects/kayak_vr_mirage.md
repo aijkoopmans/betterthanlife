@@ -5,6 +5,7 @@ subtitle:   "Kayak VR: Mirage is a jaw-dropping and exhilarating journey through
 video:      "/images/projects/kayak_vr_mirage/FinalTrailer_16_9_Website_100MB.mp4"
 image:      "/images/projects/kayak_vr_mirage/cover.png"
 steam_url:  "https://store.steampowered.com/app/1683340/Kayak_VR_Mirage?utm_source=betterthanlife.io"
+playstation_url:  "https://store.playstation.com/concept/10004438/"
 roadmap_url:  "https://trello.com/b/hSKybmxa"
 website_url: "https://kayakvr.com"
 position:   0

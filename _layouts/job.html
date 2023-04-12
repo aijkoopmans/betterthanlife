@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+{% include head.html %}
+
+<body class="single-job">
+  {% include header.html %}
+  <div class="text-center mt-md-4">
+    <img class="img-fluid intro-video" src="{{ page.image }}" alt="{{ page.title }}">
+  </div>
+
+  <div class="container my-3 my-md-5 content">
+    <h1>{{page.title}}</h1>
+    {{ content }}
+  </div>
+  {% include footer.html %}
+</body>
+</html>

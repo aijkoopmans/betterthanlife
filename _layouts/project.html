@@ -26,8 +26,12 @@
         {% endfor %}
       </div>
     {% endif %}
+    {% if page.playstation_url %}
+      <a class="h4 mt-1 mt-md-0 text-decoration-underline" target="_blank" href="{{page.playstation_url}}">
+       View on PlayStation</a>
+    {% endif %}
     {% if page.steam_url %}
-      <a class="h4 mt-1 mt-md-0 text-decoration-underline" target="_blank" href="{{page.steam_url}}">
+      <a class="h4 mt-1 ml-3 mt-md-0 text-decoration-underline" target="_blank" href="{{page.steam_url}}">
        View on Steam</a>
     {% endif %}
     {% if page.roadmap_url %}
