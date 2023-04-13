@@ -12,7 +12,7 @@ position:   0
 
 We’re an Amsterdam based indie studio that focuses on high-fidelity, polished experiences that push VR forward. We’re the studio behind <a href="/projects/kayak_vr_mirage">Kayak VR: Mirage</a>. For Kayak VR, and possible other projects in the future, we’re looking for an environment artist.
 
-Kayak VR: Mirage is a kayaking simulator made for VR using Unreal Engine, with an emphasis on graphical fidelity and nature. It’s available on PCVR (Steam) and it launched in february on the PSVR2 alongside the headset - where it became the best selling title that month. Our goal is to bring new beautiful environments to the game as we have a passionate playerbase who’d love to explore more unique locations. On top of that we’d offer you the creative freedom to create environments you are passionate about. 
+Kayak VR: Mirage is a kayaking simulator made for VR using Unreal Engine, with an emphasis on graphical fidelity and nature. It’s available on PCVR (Steam) and it launched in February on the PSVR2 alongside the headset - where it became the best selling title that month. Our goal is to bring new beautiful environments to the game as we have a passionate player base who’d love to explore more unique locations. On top of that we’d offer you the creative freedom to create environments you are passionate about. 
 
 <h3>Responsibilities</h3>
 
