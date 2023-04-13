@@ -23,6 +23,14 @@ Kayak VR: Mirage is a kayaking simulator made for VR using Unreal Engine, with a
   <li>Be involved in the process from concept to final result</li>
 </ul>
 
+<h3>Qualifications</h3>
+
+<ul>
+  <li>Experience with building environments in-engine (Unreal Engine preferred)</li>
+  <li>Able to test quick and often in VR</li>
+  <li>Able to work remotely (through Git)</li>
+</ul>
+
 <h3>Bonus</h3>
 
 <ul>
@@ -30,15 +38,6 @@ Kayak VR: Mirage is a kayaking simulator made for VR using Unreal Engine, with a
   <li>Experience with 3D modeling software (e.g. Blender, Maya, 3DSMax etc)</li>
   <li>Experience with Substance Designer / Painter</li>
   <li>Experience with creating environmental VFX</li>
-</ul>
-
-
-<h3>Qualifications</h3>
-
-<ul>
-  <li>Experience with building environments in-engine (Unreal Engine preferred)</li>
-  <li>Able to test quick and often in VR</li>
-  <li>Able to work remotely (through Git)</li>
 </ul>
 
 <h3>How to Apply</h3>
