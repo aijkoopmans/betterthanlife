@@ -6,6 +6,7 @@ video:      "/images/projects/kayak_vr_mirage/FinalTrailer_16_9_Website_100MB.mp
 image:      "/images/projects/kayak_vr_mirage/cover.png"
 steam_url:  "https://store.steampowered.com/app/1683340/Kayak_VR_Mirage?utm_source=betterthanlife.io"
 playstation_url:  "https://store.playstation.com/concept/10004438/"
+viveport_url:  "https://www.viveport.com/apps/3a70cd0e-1717-4fb6-8c1b-737920d02f41"
 roadmap_url:  "https://trello.com/b/hSKybmxa"
 website_url: "https://kayakvr.com"
 position:   0
